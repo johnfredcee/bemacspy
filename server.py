@@ -26,7 +26,7 @@ class BlenderCmd(cmd.Cmd, object):
     def __init__(self, cmd_in, cmd_out):
         cmd.Cmd.__init__(self, None, cmd_in, cmd_out)
 
-    def default(self):
+    def default(self, line):
         print "** unknown syntax ", line
         return
     
